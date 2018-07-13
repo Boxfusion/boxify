@@ -2,6 +2,32 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+.invoice {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #dee1e2;
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+  text-align: left;
+  color: black;
+}
+.invoice .logo-section {
+  margin: 30px;
+}
+.invoice .logo-section img {
+  width: 200px;
+}
+.invoice .address-section {
+  margin: 30px;
+  text-align: right;
+}
+.invoice table {
+  width: 100%;
+}
+
 .section.hero {
   position: relative;
   color: white;
