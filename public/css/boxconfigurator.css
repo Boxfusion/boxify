@@ -56,6 +56,10 @@ body {
   max-height: 510px;
   margin-bottom: 60px;
 }
+.section.faq a {
+  text-decoration: none;
+  color: black;
+}
 .section.footer {
   color: #818992;
   text-align: center;
