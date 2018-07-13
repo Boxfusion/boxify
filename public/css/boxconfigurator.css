@@ -8,8 +8,10 @@ body {
   background: #FF512F;
   background: -webkit-linear-gradient(to right, #F09819, #FF512F);
   background: linear-gradient(to right, #F09819, #FF512F);
-  padding-top: 100px;
-  padding-bottom: 100px;
+}
+.section.hero .logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .section.hero span {
   display: grid;
@@ -18,15 +20,44 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  display: inline-block;
 }
 .section.hero .wave .svg {
   display: block;
 }
+.section.hero .hero-button {
+  color: #2d3136;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ecef3c), to(#d5db1c));
+  background-image: -webkit-linear-gradient(top, #ecef3c 0%, #d5db1c 100%);
+  background-image: -o-linear-gradient(top, #ecef3c 0%, #d5db1c 100%);
+  background-image: linear-gradient(180deg, #ecef3c 0%, #d5db1c 100%);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  min-width: 60px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 1.875rem;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: 1;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+.section.hero .phone {
+  text-align: center;
+  z-index: 3;
+}
+.section.hero .phone img {
+  max-height: 510px;
+  margin-bottom: 60px;
+}
 .section.footer {
   color: #818992;
-  padding-top: 100px;
-  padding-bottom: 100px;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "skeleton": "^2.0.4"
+    "skeleton": "^2.0.4",
+    "Headhesive.js": "headhesive#^1.2.4"
   }
 }
