@@ -1,1 +1,1 @@
-# boxify
+# boxconfigurator
