@@ -1,0 +1,22 @@
+{
+  "name": "boxify",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mazi Muhlari"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Boxfusion/boxify",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4"
+  }
+}
