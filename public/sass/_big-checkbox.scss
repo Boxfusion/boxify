@@ -1,3 +1,99 @@
-.big-checkbox {
-    
+.big-checkbox-options {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    label {
+        display: inline-block;
+        input[type="checkbox"] {
+            display: none;
+            &:checked {
+                +.box {
+                    background-color: #de6b3f;
+                    border: 2px solid #d8d8d8;
+                    border-radius: 5px;
+                    span {
+                        color: white;
+                        transform: translateY(55px);
+                        &:before {
+                            transform: translateY(0px);
+                            opacity: 1;
+                        }
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #d8d8d8;
+            border: 2px solid #de6b3f;
+            border-radius: 5px;
+            transition: all 250ms ease;
+            will-change: transition;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            font-weight: 900;
+            &:active {
+                transform: translateY(10px);
+            }
+            span {
+                position: absolute;
+                transform: translate(0, 60px);
+                left: 0;
+                right: 0;
+                transition: all 300ms ease;
+                font-size: 1.5em;
+                user-select: none;
+                color: black;
+                &:before {
+                    font-size: 1.2em;
+                    font-family: FontAwesome;
+                    display: block;
+                    transform: translateY(-80px);
+                    opacity: 0;
+                    transition: all 300ms ease-in-out;
+                    font-weight: normal;
+                    color: white;
+                }
+            }
+            p {
+                position: absolute;
+                transform: translate(0, 60px);
+                left: 0;
+                right: 0;
+                transition: all 300ms ease;
+                font-size: 1.5em;
+                user-select: none;
+                color: black;
+                font-size: 12px;
+                font-weight: 100;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: -20px;
+                &:before {
+                    font-size: 1.2em;
+                    font-family: FontAwesome;
+                    display: block;
+                    transform: translateY(-80px);
+                    opacity: 0;
+                    transition: all 300ms ease-in-out;
+                    font-weight: normal;
+                    color: white;
+                }
+            }
+        }
+        .simple {
+            span {
+                &:before {
+                    content: url('/img/ok.png');
+                }
+            }
+        }
+    }
 }

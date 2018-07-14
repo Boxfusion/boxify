@@ -1,3 +1,97 @@
+.big-checkbox-options {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.big-checkbox-options label {
+  display: inline-block;
+}
+.big-checkbox-options label input[type=checkbox] {
+  display: none;
+}
+.big-checkbox-options label input[type=checkbox]:checked + .box {
+  background-color: #de6b3f;
+  border: 2px solid #d8d8d8;
+  border-radius: 5px;
+}
+.big-checkbox-options label input[type=checkbox]:checked + .box span {
+  color: white;
+  transform: translateY(55px);
+}
+.big-checkbox-options label input[type=checkbox]:checked + .box span:before {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.big-checkbox-options label input[type=checkbox]:checked + .box p {
+  display: none;
+}
+.big-checkbox-options label .box {
+  width: 200px;
+  height: 200px;
+  background-color: #d8d8d8;
+  border: 2px solid #de6b3f;
+  border-radius: 5px;
+  transition: all 250ms ease;
+  will-change: transition;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: 900;
+}
+.big-checkbox-options label .box:active {
+  transform: translateY(10px);
+}
+.big-checkbox-options label .box span {
+  position: absolute;
+  transform: translate(0, 60px);
+  left: 0;
+  right: 0;
+  transition: all 300ms ease;
+  font-size: 1.5em;
+  user-select: none;
+  color: black;
+}
+.big-checkbox-options label .box span:before {
+  font-size: 1.2em;
+  font-family: FontAwesome;
+  display: block;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  font-weight: normal;
+  color: white;
+}
+.big-checkbox-options label .box p {
+  position: absolute;
+  transform: translate(0, 60px);
+  left: 0;
+  right: 0;
+  transition: all 300ms ease;
+  font-size: 1.5em;
+  user-select: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+.big-checkbox-options label .box p:before {
+  font-size: 1.2em;
+  font-family: FontAwesome;
+  display: block;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  font-weight: normal;
+  color: white;
+}
+.big-checkbox-options label .simple span:before {
+  content: url("/img/ok.png");
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
 }
