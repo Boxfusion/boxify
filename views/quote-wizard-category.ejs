@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="six columns">
-                    <a href="/qoute/wizard/audience">
+                    <a href="/qoute/wizard/description">
                         <i class="fas fa-arrow-left"></i>GO BACK
                     </a>
                 </div>
@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="twelve columns">
                     <h5>
-                        Step 4 of 7
+                        Step 2 of 7
                     </h5>
                     <h1>
                         What is your apps main focus?
@@ -61,7 +61,47 @@
                 </div>
             </div>
             <div class="row">
-                <a href="/qoute/wizard/features" class="main-button" style="margin-bottom: 20px;">Continue</a>
+                <div class="big-radio-options">
+                    <label>
+                        <input type="radio" name="radio" value="event" />
+                        <div class="simple box">
+                            <span>Event</span>
+                            <p>
+                                Your application is going to be mainly used for events and conferenceres by event goers and coordinators.
+                            </p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="customer" />
+                        <div class="simple box">
+                            <span>Customer</span>
+                            <p>
+                                Your application is going to be mainly targeted at your customers that you sell services or products to.
+                            </p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="employee" />
+                        <div class="simple box">
+                            <span>Employee</span>
+                            <p>
+                                Your application is going to be mainly targeted at your employees that you need to engagement with regularly.
+                            </p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="community" />
+                        <div class="simple box">
+                            <span>Community</span>
+                            <p>
+                                Your application is going to be mainly targeted at the general public that you need to engagement with regularly.
+                            </p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <a href="/qoute/wizard/features" class="main-button continue" style="margin-bottom: 20px;">Continue</a>
             </div>
         </div>
     </div>
@@ -73,6 +113,40 @@
             <div class="four columns"></div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $(function () {
+
+            // default link location
+            $("a.continue").attr("href", "/qoute/wizard/category/other/questions");
+
+            // radio button changed
+            $('input:radio[name="radio"]').change(
+                function () {
+                    switch (this.value) {
+                        case 'event':
+                            updateLink(this.value);
+                            break;
+                        case 'customer':
+                            updateLink(this.value);
+                            break;
+                        case 'employee':
+                            updateLink(this.value);
+                            break;
+                        case 'community':
+                            updateLink(this.value);
+                            break;
+                    }
+                });
+
+            // updates the link for continue
+            function updateLink(category) {
+                var link = "/qoute/wizard/category/" + category + "/questions";
+                $("a.continue").attr("href", link);
+            }
+
+        });
+    </script>
 
 </body>
 
