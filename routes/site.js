@@ -27,6 +27,10 @@ router.get('/qoute/wizard/category/event/design', async (req, res) => {
     res.render('quote-wizard-category-event-design.ejs');
 });
 
+router.get('/qoute/wizard/category/event/complete', async (req, res) => {
+    res.render('quote-wizard-category-event-complete.ejs');
+});
+
 // Community
 
 router.get('/qoute/wizard/category/community/questions', async (req, res) => {
@@ -39,6 +43,10 @@ router.get('/qoute/wizard/category/community/features', async (req, res) => {
 
 router.get('/qoute/wizard/category/community/design', async (req, res) => {
     res.render('quote-wizard-category-community-design.ejs');
+});
+
+router.get('/qoute/wizard/category/community/complete', async (req, res) => {
+    res.render('quote-wizard-category-community-complete.ejs');
 });
 
 // Employee
@@ -55,6 +63,10 @@ router.get('/qoute/wizard/category/employee/design', async (req, res) => {
     res.render('quote-wizard-category-employee-design.ejs');
 });
 
+router.get('/qoute/wizard/category/employee/complete', async (req, res) => {
+    res.render('quote-wizard-category-employee-complete.ejs');
+});
+
 // Customer
 
 router.get('/qoute/wizard/category/customer/questions', async (req, res) => {
@@ -69,6 +81,10 @@ router.get('/qoute/wizard/category/customer/design', async (req, res) => {
     res.render('quote-wizard-category-customer-design.ejs');
 });
 
+router.get('/qoute/wizard/category/customer/complete', async (req, res) => {
+    res.render('quote-wizard-category-customer-complete.ejs');
+});
+
 // Other
 
 router.get('/qoute/wizard/category/other/questions', async (req, res) => {
@@ -81,6 +97,10 @@ router.get('/qoute/wizard/category/other/features/', async (req, res) => {
 
 router.get('/qoute/wizard/category/other/design', async (req, res) => {
     res.render('quote-wizard-category-other-design.ejs');
+});
+
+router.get('/qoute/wizard/category/other/complete', async (req, res) => {
+    res.render('quote-wizard-category-other-complete.ejs');
 });
 
 
