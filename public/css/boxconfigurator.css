@@ -18,6 +18,7 @@
 .big-checkbox-options label input[type=checkbox]:checked + .box span {
   color: white;
   transform: translateY(55px);
+  margin-top: inherit;
 }
 .big-checkbox-options label input[type=checkbox]:checked + .box span:before {
   transform: translateY(0px);
@@ -26,9 +27,12 @@
 .big-checkbox-options label input[type=checkbox]:checked + .box p {
   display: none;
 }
+.big-checkbox-options label input[type=checkbox]:checked + .box img {
+  opacity: 0;
+}
 .big-checkbox-options label .box {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 230px;
   background-color: #d8d8d8;
   border: 2px solid #cb2d3e;
   border-radius: 5px;
@@ -43,6 +47,10 @@
 .big-checkbox-options label .box:active {
   transform: translateY(10px);
 }
+.big-checkbox-options label .box img {
+  width: 50px;
+  margin-top: 15px;
+}
 .big-checkbox-options label .box span {
   position: absolute;
   transform: translate(0, 60px);
@@ -52,6 +60,7 @@
   font-size: 1.5em;
   user-select: none;
   color: black;
+  margin-top: 60px;
 }
 .big-checkbox-options label .box span:before {
   font-size: 1.2em;
@@ -76,7 +85,7 @@
   font-weight: 100;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 .big-checkbox-options label .box p:before {
   font-size: 1.2em;
@@ -112,6 +121,7 @@
 .big-radio-options label input[type=radio]:checked + .box span {
   color: white;
   transform: translateY(55px);
+  margin-top: inherit;
 }
 .big-radio-options label input[type=radio]:checked + .box span:before {
   transform: translateY(0px);
@@ -120,9 +130,12 @@
 .big-radio-options label input[type=radio]:checked + .box p {
   display: none;
 }
+.big-radio-options label input[type=radio]:checked + .box img {
+  opacity: 0;
+}
 .big-radio-options label .box {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 230px;
   background-color: #d8d8d8;
   border: 2px solid #cb2d3e;
   border-radius: 5px;
@@ -137,6 +150,10 @@
 .big-radio-options label .box:active {
   transform: translateY(10px);
 }
+.big-radio-options label .box img {
+  width: 50px;
+  margin-top: 15px;
+}
 .big-radio-options label .box span {
   position: absolute;
   transform: translate(0, 60px);
@@ -146,6 +163,7 @@
   font-size: 1.5em;
   user-select: none;
   color: black;
+  margin-top: 60px;
 }
 .big-radio-options label .box span:before {
   font-size: 1.2em;
@@ -170,7 +188,7 @@
   font-weight: 100;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: -20px;
+  margin-top: -50px;
 }
 .big-radio-options label .box p:before {
   font-size: 1.2em;
@@ -361,8 +379,6 @@ body {
   position: relative;
   color: white;
   background: #cb2d3e;
-  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
-  background: linear-gradient(to right, #ef473a, #cb2d3e);
 }
 .section.hero .logo {
   margin-top: 30px;
@@ -432,8 +448,6 @@ body {
 .wizard {
   color: white;
   background: #cb2d3e;
-  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
-  background: linear-gradient(to right, #ef473a, #cb2d3e);
 }
 .wizard .toolbar {
   margin-top: 15px;

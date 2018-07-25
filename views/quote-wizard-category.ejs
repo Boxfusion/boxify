@@ -62,6 +62,7 @@
                     <label>
                         <input type="radio" name="radio" value="event" />
                         <div class="simple box">
+                            <img src="/img/icons/event.png" />
                             <span>Event</span>
                             <p>
                                 Your application is going to be mainly used for an event or conference by people attending your event.
@@ -71,6 +72,7 @@
                     <label>
                         <input type="radio" name="radio" value="customer" />
                         <div class="simple box">
+                            <img src="/img/icons/customer.png" />
                             <span>Customer</span>
                             <p>
                                 Your application is going to be mainly targeted at your customers that you sell services or products to.
@@ -80,6 +82,7 @@
                     <label>
                         <input type="radio" name="radio" value="employee" />
                         <div class="simple box">
+                            <img src="/img/icons/employee.png" />
                             <span>Employee</span>
                             <p>
                                 Your application is going to be mainly targeted at your employees that you need to engagement with regularly.
@@ -89,9 +92,20 @@
                     <label>
                         <input type="radio" name="radio" value="community" />
                         <div class="simple box">
+                            <img src="/img/icons/community.png" />
                             <span>Community</span>
                             <p>
                                 Your application is going to be mainly targeted at the general public that you need to engagement with regularly.
+                            </p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="other" />
+                        <div class="simple box">
+                            <img src="/img/icons/other.png" />
+                            <span>Other</span>
+                            <p>
+                                The application does not really fit into the ctegories listed and you would like to describe what your needs are.
                             </p>
                         </div>
                     </label>
@@ -131,6 +145,9 @@
                             updateLink(this.value);
                             break;
                         case 'community':
+                            updateLink(this.value);
+                            break;
+                        case 'other':
                             updateLink(this.value);
                             break;
                     }
